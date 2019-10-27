@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "Hoàng Nguyễn Phước Bảo"
 title_separator          : "-"
-name                     : &name "Call me Hoàng :)"
-description              : &description "Proving things is fun!"
+name                     : &name "Hoàng"
+description              : &description "call me Hoàng :)"
 url                      : https://www.hoangnpb.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "just-hoang/just-hoang.github.io"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hoang Nguyen"
+  name             : "Hoàng Nguyễn Phước Bảo"
   avatar           : "profile.png"
   bio              : "Research Assitant at Vietnamese-German University"
   location         : "HCMC, Vietnam"
