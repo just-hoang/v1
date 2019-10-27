@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hoang Nguyen Phuoc Bao"
+title                    : "Hoàng Nguyễn Phước Bảo"
 title_separator          : "-"
-name                     : &name "Hoang Nguyen"
-description              : &description "Research Assistant at Vietnamese-German University"
+name                     : &name "Call me Hoàng :)"
+description              : &description "Proving things is fun!"
 url                      : https://www.hoangnpb.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "just-hoang/just-hoang.github.io"
@@ -102,14 +102,14 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/hoangnpbit/"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : # "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
