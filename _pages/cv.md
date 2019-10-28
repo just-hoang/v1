@@ -12,15 +12,12 @@ redirect_from:
 (Updated Oct, 2019)
 
 ## Personal Information
-======
 Born 14th June, 1996. Male. Vietnam.
 
 ## Education
-======
 * B.S. in Computer Science, Vietnamese-German University, 2018
 
 ## Work experience
-======
 * Jan 2019 - Present: Research Assistant in Software Engineering, Computer Science
   * [Vietnamese - German University](https://vgu.edu.vn/)
   * Working under the supervision of Prof. Manuel Clavel in the field of model-driven engineering and proving the correctness of the mechanism using formal methods in computer science.
@@ -31,7 +28,6 @@ Born 14th June, 1996. Male. Vietnam.
   * Developing a financial management project for [Soreco AG](https://www.sorecoweb.ch/de/), Switzerland. Maintaining their former successful outsourcing projects and providing support for current and potential customers
 
 ## Major fields of interest
-======
 * Software Engineering - Model-Driven Engineering
 * Formal Mathematics - Formal Methods in Computer Science
 
