@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "<img src='/images/about.png'><br/><hr/>About Hoàng"
+title: "<img src='/images/about.png'><br/><hr>About Hoàng"
 excerpt: "About me/ Contact"
 author_profile: true
 redirect_from: 
