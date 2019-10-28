@@ -9,6 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
+(Updated Oct, 2019)
+
+Personal Information
+======
+Born 14th June, 1996. Male. Vietnam.
+
 Education
 ======
 * B.S. in Computer Science, Vietnamese-German University, 2018
