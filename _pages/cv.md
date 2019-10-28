@@ -11,15 +11,15 @@ redirect_from:
 
 (Updated Oct, 2019)
 
-Personal Information
+## Personal Information
 ======
 Born 14th June, 1996. Male. Vietnam.
 
-Education
+## Education
 ======
 * B.S. in Computer Science, Vietnamese-German University, 2018
 
-Work experience
+## Work experience
 ======
 * Jan 2019 - Present: Research Assistant in Software Engineering, Computer Science
   * [Vietnamese - German University](https://vgu.edu.vn/)
@@ -30,7 +30,7 @@ Work experience
   * [Axon Active Vietnam](https://www.axonactive.com/)
   * Developing a financial management project for [Soreco AG](https://www.sorecoweb.ch/de/), Switzerland. Maintaining their former successful outsourcing projects and providing support for current and potential customers
 
-Major fields of interest
+## Major fields of interest
 ======
 * Software Engineering - Model-Driven Engineering
 * Formal Mathematics - Formal Methods in Computer Science
