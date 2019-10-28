@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "<img src='/images/about.png'><br/>About Hoàng"
+title: "<img src='/images/about.png'><br/><hr/>About Hoàng"
 excerpt: "About me/ Contact"
 author_profile: true
 redirect_from: 
@@ -20,4 +20,4 @@ Contact
 ======
 Contact information is below, it currently includes only my email and will be updated when my other web services become more informative.
 
-* E-mail: ngpbhoang1406 [at] gmail.com
+* E-mail: ngpbhoang1406 [at] gmail [dot] com
