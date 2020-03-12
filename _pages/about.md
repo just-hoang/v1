@@ -18,4 +18,4 @@ Contact information is below, it currently includes only my email and will be up
 
 * E-mail: ngpbhoang1406 [at] gmail [dot] com
 
-(\*)[Computer Science](https://vgu.edu.vn/study-programs/bachelor/cs) at VGU is an internationally accredited program from the German Partner University of Applied Sciences Frankfurt am Main.
+(\*)<sub>[Computer Science](https://vgu.edu.vn/study-programs/bachelor/cs) at VGU is an internationally accredited program from the German Partner University of Applied Sciences Frankfurt am Main.</sub>
