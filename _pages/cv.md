@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-<embed src="https://hoangnpb.com/files/MyCV.pdf" type="application/pdf" width="600px" height="500px" />
+<embed src="./files/MyCV.pdf" type="application/pdf" width="600px" height="500px" />
