@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-<embed src="./files/MyCV.pdf" type="application/pdf" width="600px" height="500px" />
+<embed src="https://just-hoang.github.io/files/MyCV.pdf" type="application/pdf" width="600px" height="500px" />
