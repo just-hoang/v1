@@ -1,6 +1,9 @@
 body, html {
     height: 100%;
   }
+body {
+    margin: 0px;
+}
 
 .div-main-background {
     background-image: linear-gradient(to bottom right, #048bdb, white);
