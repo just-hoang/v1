@@ -4454,7 +4454,7 @@ var $author$project$HomePage$introductionContentView = A2(
 					$elm$html$Html$text('Hi again!'),
 					A2($elm$html$Html$br, _List_Nil, _List_Nil),
 					A2($elm$html$Html$br, _List_Nil, _List_Nil),
-					$elm$html$Html$text('I tend to make the surface of my webpage concise. For further information, please contact me via my personal email which attached in my '),
+					$elm$html$Html$text('I tend to make the surface of my webpage concise. For further information, please contact me via my personal email listed in my '),
 					A2(
 					$elm$html$Html$a,
 					_List_fromArray(
@@ -4538,7 +4538,7 @@ var $author$project$HomePage$introductionContentView = A2(
 								]),
 							_List_fromArray(
 								[
-									$elm$html$Html$text('proving things using automated theorem provers,')
+									$elm$html$Html$text('proving things using Automated Theorem Provers,')
 								])),
 							A2(
 							$elm$html$Html$li,
@@ -4548,7 +4548,7 @@ var $author$project$HomePage$introductionContentView = A2(
 								]),
 							_List_fromArray(
 								[
-									$elm$html$Html$text('verifying programs using verification tools.')
+									$elm$html$Html$text('verifying programs using Verification Tools.')
 								]))
 						]))
 				]))

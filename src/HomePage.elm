@@ -80,7 +80,7 @@ introductionContentView =
             text "Hi again!"
             , br [] []
             , br [] []
-            , text "I tend to make the surface of my webpage concise. For further information, please contact me via my personal email which attached in my "
+            , text "I tend to make the surface of my webpage concise. For further information, please contact me via my personal email listed in my "
             , a [href "src/MyCV.pdf"] [text "CV"]
             , text "."
             , br [] []
@@ -108,10 +108,10 @@ introductionContentView =
                     [ text "learning about the history of Programming Languages," 
                     ]
                 , li [ style "font-weight" "500" ] 
-                    [ text "proving things using automated theorem provers," 
+                    [ text "proving things using Automated Theorem Provers," 
                     ]
                 , li [ style "font-weight" "500" ] 
-                    [ text "verifying programs using verification tools." 
+                    [ text "verifying programs using Verification Tools." 
                     ]
             ]
             -- , br [] []
