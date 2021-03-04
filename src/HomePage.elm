@@ -77,19 +77,43 @@ introductionContentView =
     div
         [ class "div-content-main-content" ]
         [ div [ style "margin" "5%" ] [ 
-            text "I'm currently "
+            text "Hi again!"
+            , br [] []
+            , br [] []
+            , text "I tend to make the surface of my webpage concise. For further information, please contact me via my personal email which attached in my "
+            , a [href "src/MyCV.pdf"] [text "CV"]
+            , text "."
+            , br [] []
+            , br [] []
+            , text "I'm now:"
             , ul [] [
                 li [ style "font-weight" "500" ] 
-                    [ text "a research assistant in Software Engineering at the Vietnamese-German University" 
-                    , br [] []
-                    , text "(Binh Duong, Vietnam),"
+                    [ text "a Master student in Formal Methods at the Inter-University Program at the Autónoma | Complutense | Politécnica Universidad de Madrid," 
                     ]
                 ,li [ style "font-weight" "500" ] 
-                    [ text "and a student in Formal Methods at the Inter-University Master Program at the Autónoma | Complutense | Politécnica University" 
-                    , br [] []
-                    , text "(Madrid, Spain)."
+                    [ text "and a research assistant in Software Engineering at the Vietnamese-German University." 
                     ]
-                ]
+            ]
+            , br [] []
+            , text "I'm working on:"
+            , ul [] [
+                li [ style "font-weight" "500" ] 
+                    [ text "developing a model-driven methodology for enforcing fine-grained access control (FGAC) policies on database-centric applications." 
+                    ]
+            ]
+            , br [] []
+            , text "I'm interested in:"
+            , ul [] [
+                li [ style "font-weight" "500" ] 
+                    [ text "learning about the history of Programming Languages," 
+                    ]
+                , li [ style "font-weight" "500" ] 
+                    [ text "proving things using automated theorem provers," 
+                    ]
+                , li [ style "font-weight" "500" ] 
+                    [ text "verifying programs using verification tools." 
+                    ]
+            ]
             -- , br [] []
             -- , text "I am interested in doing project about"
             -- , ul [] [
@@ -100,9 +124,9 @@ introductionContentView =
             --         [ text "and Specification and constraint languages: semantics, implementations and proof assistants." 
             --         ]
             --     ]
-            , text "Here is my "
-            , a [href "src/MyCV.pdf"] [text "CV"]
-            , text "."
+            -- , text "Here is my "
+            -- , a [href "src/MyCV.pdf"] [text "CV"]
+            -- , text "."
         ]
         ]
 
