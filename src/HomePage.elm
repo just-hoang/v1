@@ -15,6 +15,7 @@ view =
         [ 
         headerView
         , bodyView
+        , footerView
         ]
 
 headerView : Html msg
@@ -22,6 +23,13 @@ headerView =
     div []
         [ languageView
         , titleView
+        ]
+
+footerView : Html msg
+footerView =
+    div [ class "div-footer-breakline" ]
+        [
+            
         ]
 
 
@@ -80,27 +88,36 @@ introductionContentView =
             text "Hi again!"
             , br [] []
             , br [] []
-            , text "I tend to make the surface of my webpage concise. For further information, please contact me via my personal email listed in my "
+            , text "I tend to make the front of my webpage concise."
+            , br [] []
+            , text "For further information, please contact me via my personal email in my CV."
+            , br [] []
+            , br [] []
+            , text "Here is my "
             , a [href "src/MyCV.pdf"] [text "CV"]
             , text "."
             , br [] []
             , br [] []
-            , text "I'm now:"
+            , text "I'm currently:"
             , ul [] [
                 li [ style "font-weight" "500" ] 
-                    [ text "a Master student in Formal Methods at the Inter-University Program at the Autónoma | Complutense | Politécnica Universidad de Madrid," 
+                    [ text "a Master student in Formal Methods at the Inter-University Program"
+                    , br [] []
+                    , text "at the Autónoma | Complutense | Politécnica Universidad de Madrid,"
                     ]
                 ,li [ style "font-weight" "500" ] 
-                    [ text "and a research assistant in Software Engineering at the Vietnamese-German University." 
+                    [ text "and a research assistant in Software Engineering and Programming Languages" 
+                    , br [] []
+                    , text "at the Vietnamese-German University, Binh Duong, Vietnam."
                     ]
             ]
+            , text "I'm working on developing a model-driven methodology for enforcing fine-grained access control (FGAC) policies on database-centric applications."
+            -- , ul [] [
+            --     li [ style "font-weight" "500" ] 
+            --         [ text "" 
+            --         ]
+            -- ]
             , br [] []
-            , text "I'm working on:"
-            , ul [] [
-                li [ style "font-weight" "500" ] 
-                    [ text "developing a model-driven methodology for enforcing fine-grained access control (FGAC) policies on database-centric applications." 
-                    ]
-            ]
             , br [] []
             , text "I'm interested in:"
             , ul [] [

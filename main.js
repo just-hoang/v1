@@ -4454,7 +4454,12 @@ var $author$project$HomePage$introductionContentView = A2(
 					$elm$html$Html$text('Hi again!'),
 					A2($elm$html$Html$br, _List_Nil, _List_Nil),
 					A2($elm$html$Html$br, _List_Nil, _List_Nil),
-					$elm$html$Html$text('I tend to make the surface of my webpage concise. For further information, please contact me via my personal email listed in my '),
+					$elm$html$Html$text('I tend to make the front of my webpage concise.'),
+					A2($elm$html$Html$br, _List_Nil, _List_Nil),
+					$elm$html$Html$text('For further information, please contact me via my personal email in my CV.'),
+					A2($elm$html$Html$br, _List_Nil, _List_Nil),
+					A2($elm$html$Html$br, _List_Nil, _List_Nil),
+					$elm$html$Html$text('Here is my '),
 					A2(
 					$elm$html$Html$a,
 					_List_fromArray(
@@ -4468,7 +4473,7 @@ var $author$project$HomePage$introductionContentView = A2(
 					$elm$html$Html$text('.'),
 					A2($elm$html$Html$br, _List_Nil, _List_Nil),
 					A2($elm$html$Html$br, _List_Nil, _List_Nil),
-					$elm$html$Html$text('I\'m now:'),
+					$elm$html$Html$text('I\'m currently:'),
 					A2(
 					$elm$html$Html$ul,
 					_List_Nil,
@@ -4482,7 +4487,9 @@ var $author$project$HomePage$introductionContentView = A2(
 								]),
 							_List_fromArray(
 								[
-									$elm$html$Html$text('a Master student in Formal Methods at the Inter-University Program at the Autónoma | Complutense | Politécnica Universidad de Madrid,')
+									$elm$html$Html$text('a Master student in Formal Methods at the Inter-University Program'),
+									A2($elm$html$Html$br, _List_Nil, _List_Nil),
+									$elm$html$Html$text('at the Autónoma | Complutense | Politécnica Universidad de Madrid,')
 								])),
 							A2(
 							$elm$html$Html$li,
@@ -4492,27 +4499,13 @@ var $author$project$HomePage$introductionContentView = A2(
 								]),
 							_List_fromArray(
 								[
-									$elm$html$Html$text('and a research assistant in Software Engineering at the Vietnamese-German University.')
+									$elm$html$Html$text('and a research assistant in Software Engineering and Programming Languages'),
+									A2($elm$html$Html$br, _List_Nil, _List_Nil),
+									$elm$html$Html$text('at the Vietnamese-German University, Binh Duong, Vietnam.')
 								]))
 						])),
+					$elm$html$Html$text('I\'m working on developing a model-driven methodology for enforcing fine-grained access control (FGAC) policies on database-centric applications.'),
 					A2($elm$html$Html$br, _List_Nil, _List_Nil),
-					$elm$html$Html$text('I\'m working on:'),
-					A2(
-					$elm$html$Html$ul,
-					_List_Nil,
-					_List_fromArray(
-						[
-							A2(
-							$elm$html$Html$li,
-							_List_fromArray(
-								[
-									A2($elm$html$Html$Attributes$style, 'font-weight', '500')
-								]),
-							_List_fromArray(
-								[
-									$elm$html$Html$text('developing a model-driven methodology for enforcing fine-grained access control (FGAC) policies on database-centric applications.')
-								]))
-						])),
 					A2($elm$html$Html$br, _List_Nil, _List_Nil),
 					$elm$html$Html$text('I\'m interested in:'),
 					A2(
@@ -4582,6 +4575,13 @@ var $author$project$HomePage$bodyView = A2(
 		]),
 	_List_fromArray(
 		[$author$project$HomePage$leftMainDiv, $author$project$HomePage$mainDiv, $author$project$HomePage$rightMainDiv]));
+var $author$project$HomePage$footerView = A2(
+	$elm$html$Html$div,
+	_List_fromArray(
+		[
+			$elm$html$Html$Attributes$class('div-footer-breakline')
+		]),
+	_List_Nil);
 var $author$project$HomePage$languageView = A2(
 	$elm$html$Html$div,
 	_List_fromArray(
@@ -4645,6 +4645,6 @@ var $author$project$HomePage$view = A2(
 			$elm$html$Html$Attributes$class('div-main-background')
 		]),
 	_List_fromArray(
-		[$author$project$HomePage$headerView, $author$project$HomePage$bodyView]));
+		[$author$project$HomePage$headerView, $author$project$HomePage$bodyView, $author$project$HomePage$footerView]));
 var $author$project$HomePage$main = $author$project$HomePage$view;
 _Platform_export({'HomePage':{'init':_VirtualDom_init($author$project$HomePage$main)(0)(0)}});}(this));
