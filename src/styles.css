@@ -1,12 +1,15 @@
 body, html {
-    height: auto;
+    width: 100%;
   }
 body {
+    background-image: linear-gradient(to bottom right, #048bdb, white);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
     margin: 0px;
+    min-height: 100%;
 }
 
 .div-main-background {
-    background-image: linear-gradient(to bottom right, #048bdb, white);
     height: 100%;
 }
 
