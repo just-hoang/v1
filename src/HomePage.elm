@@ -1,13 +1,7 @@
 module HomePage exposing (main)
 
-import AutoExpand exposing (State(..))
-import Html exposing (Html, div, text, a, br, ul, li)
-import Html.Attributes exposing (style, href, class)
-import Http exposing (Error(..))
--- import Material.Icons as Filled exposing (bookmarks)
-import Material.Icons.Types exposing (Coloring(..))
--- import String exposing (isEmpty)
--- import SyntaxHighlight exposing (useTheme, oneDark, elm, toBlockHtml)
+import Html exposing (..)
+import Html.Attributes exposing (..)
 
 view : Html msg
 view =
@@ -24,14 +18,6 @@ headerView =
         [ languageView
         , titleView
         ]
-
-footerView : Html msg
-footerView =
-    div [ class "div-footer-breakline" ]
-        [
-            
-        ]
-
 
 languageView : Html msg
 languageView =
@@ -53,6 +39,12 @@ titleView =
             [ text "Welcome to my personal webpage!" ]
         ]
 
+footerView : Html msg
+footerView =
+    div [ class "div-footer-breakline" ]
+        [
+            
+        ]
 
 bodyView : Html msg
 bodyView =
