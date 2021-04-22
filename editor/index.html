@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ebook Testing Material</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Proof of concept - với một chút Tiếng Việt!</h1>
+	</div>
+
+	<div class="container">
+		<p>On the left, it should appear the text in its stored form.</p>
+		<p>On the right, it should appear the rendered the generated HTML
+			+ CSS.</p>
+	</div>
+
+	<hr />
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-5 col-xs-12">
+				<textarea id="textarea_raw" class="col-md-12 col-sm-12 col-xs-12" rows=15></textarea>
+			</div>
+			<div class="col-md-2 col-sm-2 col-xs-12">
+				<div class="text-center">
+					<button id="btn_render" type="button" class="btn btn-primary">&rarr;</button>
+				</div>
+				<br />
+				<div class="text-center">
+					<button id="btn_raw" type="button" class="btn btn-primary">&larr;</button>
+				</div>
+			</div>
+			<div class="col-md-5 col-sm-5 col-xs-12">
+				<div id="div_rendered" class="col-md-12 col-sm-12 col-xs-12" contenteditable="true"></div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
