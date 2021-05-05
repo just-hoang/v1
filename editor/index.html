@@ -1,52 +1,217 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Ebook Testing Material</title>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>My Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 <body>
-	<div class="container">
-		<h1>Proof of concept - với một chút Tiếng Việt!</h1>
-	</div>
 
-	<div class="container">
-		<p>On the left, it should appear the text in its stored form.</p>
-		<p>On the right, it should appear the rendered the generated HTML
-			+ CSS.</p>
-	</div>
+	<!-- Navigation -->
+	<nav
+		class="navbar navbar-expand-sm navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html"> Editor <!--  <img src="../assets/images/logo2.png" alt="Logo"> -->
+		</a>
 
-	<hr />
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5 col-sm-5 col-xs-12">
-				<textarea id="textarea_raw" class="col-md-12 col-sm-12 col-xs-12" rows=15></textarea>
-			</div>
-			<div class="col-md-2 col-sm-2 col-xs-12">
-				<div class="text-center">
-					<button id="btn_render" type="button" class="btn btn-primary">&rarr;</button>
-				</div>
-				<br />
-				<div class="text-center">
-					<button id="btn_raw" type="button" class="btn btn-primary">&larr;</button>
-				</div>
-			</div>
-			<div class="col-md-5 col-sm-5 col-xs-12">
-				<div id="div_rendered" class="col-md-12 col-sm-12 col-xs-12" contenteditable="true"></div>
-			</div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
 		</div>
+	</nav>
 
+
+	<div class="page d-none" id="home_page"></div>
+
+	<!-- EDITOR: INSERT CONTAINER PAGE -->
+	<div class="page d-none" id="insert_container_page">
+		<div class="container">
+			<!-- books -->
+			<div class="row align-items-start">
+				<div class="col-1">
+					<label>Books</label>
+				</div>
+				<div class="col-3">
+					<input class="typeahead" id="books"></input>
+				</div>
+				<div class="col-1"></div>
+				<div class="col-1"></div>
+				<div class="col-1">
+				<button id="delete_book_bu">Delete</button>
+				</div>
+			
+				<div class="col-1">
+					<button id="new_book_bu">New</button>
+				</div>
+				<div class="col-1">
+					<label>Book</label>
+				</div>
+				<div class="col-3">
+					<input id="new_book_title"></input>
+				</div>
+			</div>
+			<!-- codes -->
+			<div class="row">
+			<div class="col-1">
+					<label>Code</label>
+				</div>
+				<div class="col-1">
+					<input id="code" readonly></input>
+				</div>
+				<div class="col-6">
+				</div>
+				<div class="col-1">
+					<label>Code</label>
+				</div>
+				<div class="col-1">
+					<input id="new_book_code"></input>
+				</div>
+			</div>
+			<!-- chapters -->
+			<div class="row">
+				<div class="col-1">
+					<label>Chapters</label>
+				</div>
+				<div class="col-3">
+					<input class="typeahead" id="chapters"></input>
+				</div>
+				<div class="col-1">
+					<button id="change_position_chapter_bu">Change</button>
+				</div>
+				
+				<select class="col-1" id="chapters_positions"></select>
+				<div class="col-1">
+				<button id="delete_chapter_bu">Delete</button>
+				</div>
+				<div class="col-1">
+					<button id="new_chapter_bu">New</button>
+				</div>
+				<div class="col-1">
+					<label>Chapter</label>
+				</div>
+				<div class="col-3">
+					<input id="new_chapter_title"></input>
+				</div>
+				<!--  back here -->
+			</div>
+			</div>
+			<!-- text -->
+			<div class="container">
+				<!-- text action buttons -->
+				<div class="row mt-2 mb-2">
+					<div id="button_raw" class="col-12 text-center">
+						<button id="btn_render" type="button" class="btn">&rarr;</button>
+					</div>
+					<div id="button_render" class="col-12 text-center">
+						<button id="btn_raw" type="button" class="btn">&larr;</button>
+						<button id="btn_bold" type="button" class="btn"><b>B</b></button>
+						<button id="btn_italic" type="button" class="btn"><i>I</i></button>
+						<button id="btn_header" type="button" class="btn"><span style="font-family: 'Times New Roman', Times, serif">H</span></button>
+						<div class="btn-group">
+							<button id="btn_fontsize" class="btn dropdown-toggle" type="button" 
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span style="font-size: 16px;">S</span><span style="font-size: 8px;">s</span>
+							</button>
+							<div class="dropdown-menu" aria-labelledby="btn_fontsize">
+								<a class="dropdown-item" href="#" id="btn_fontsize_1">1</a>
+								<a class="dropdown-item" href="#" id="btn_fontsize_2">2</a>
+								<a class="dropdown-item" href="#" id="btn_fontsize_3">3</a>
+								<a class="dropdown-item" href="#" id="btn_fontsize_4">4</a>
+								<a class="dropdown-item" href="#" id="btn_fontsize_5">5</a>
+								<a class="dropdown-item" href="#" id="btn_fontsize_6">6</a>
+								<a class="dropdown-item" href="#" id="btn_fontsize_7">7</a>
+							</div>
+						</div>
+						<div class="btn-group">
+							<button id="btn_justify" class="btn dropdown-toggle" type="button" 
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							J
+							</button>
+							<div id="justify-menu" class="dropdown-menu" aria-labelledby="btn_justify">
+								<a class="dropdown-item" href="#" id="btn_justify_left">Left</a>
+								<a class="dropdown-item" href="#" id="btn_justify_center">Center</a>
+								<a class="dropdown-item" href="#" id="btn_justify_right">Right</a>
+								<a class="dropdown-item" href="#" id="btn_justify_full">Justify</a>
+							</div>
+						</div>
+						<input type="color" id="btn_paint" value="#121212"/>
+					</div>
+				</div>
+				<!-- raw & render editor -->
+				<div class="row">
+					<div id="div_raw" class="col-12 p-0">
+						<textarea style="height:400px;" class="col-12" id="text"></textarea>
+					</div>
+					<div id="div_render" style="height:400px; 
+						min-height:100%; border: 1px solid black;
+						word-wrap: break-word; padding-top: 2px; padding-bottom: 2px;" 
+						class="col-12" contenteditable="true">
+					</div>
+				</div>
+				<!-- save -->
+				<div class="row mt-2">
+					<div class="col-12">
+						<button id="save_chapter_bu">Save</button>
+					</div>
+				</div>
+		</div>
 	</div>
+	
+	<!-- END  -->
 
 
 
+
+	<!--- END -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+		integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+		crossorigin="anonymous"></script>
 
 	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+
 	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script src="script.js"></script>
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+
+	<!-- to handle cookies -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.js"
+		integrity="sha256-ZTMFCvouhTVozUsLgEjtZOlJY+OAiLImV1p8yoBU9OI="
+		crossorigin="anonymous"></script>
+
+	<!-- to decode json web tokens -->
+	<script src="vendor/jwt-decode.min.js"></script>
+
+	<!-- Bootstrap Typeahead Plugin -->
+	<script src="js/bootstrap3-typeahead.js"></script>
+
+	<!--  my own rules -->
+	<script src="js/scripts.js"></script>
+	<script src="js/htmlparser.js"></script>
+
 </body>
 </html>
